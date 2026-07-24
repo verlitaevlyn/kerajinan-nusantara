@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Katalog Kerajinan Tangan Nusantara - Batik, Ukiran Kayu, dan Anyaman">
+  <title>Kerajinan Nusantara | Katalog Produk</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Kerajinan Nusantara</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka Menu Navigasi">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Beranda</a></li>
+          <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+          <li><a href="produk.html" class="nav-link active">Produk</a></li>
+          <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+          <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+          <li><button class="theme-toggle-btn" id="themeToggle">🌙 Mode Gelap</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title">Katalog Karya Kerajinan</h1>
+
+    <!-- Filter Produk berdasarkan Jenis Kerajinan -->
+    <div class="filter-container">
+      <button class="filter-btn active" data-category="all">Semua Jenis</button>
+      <button class="filter-btn" data-category="tekstil">Tekstil & Kain</button>
+      <button class="filter-btn" data-category="kayu">Ukiran Kayu</button>
+      <button class="filter-btn" data-category="anyaman">Anyaman & Serat</button>
+    </div>
+
+    <div class="grid-3" id="productGrid">
+      <article class="card product-card" data-category="tekstil">
+        <img src="images/tenun1.jpg" alt="Kain Tenun Ikat NTT"> 
+        <h3>Tenun Ikat NTT</h3>
+        <p>Kain tenun bermotif khas Nusa Tenggara Timur yang dibuat menggunakan pewarna alami dan alat tenun bukan mesin (ATBM).</p>
+        <p class="card-price">Rp 450.000</p>
+      </article>
+
+      <article class="card product-card" data-category="kayu">
+        <img src="images/ukiran.jpg" alt="Patung Ukir Kayu Jepara">
+        <h3>Patung Ukir Jati</h3>
+        <p>Hasil hiasan dinding dan pahatan kayu jati asli dari sentra ukir Jepara dengan detail yang sangat rinci.</p>
+        <p class="card-price">Rp 350.000</p>
+      </article>
+
+      <article class="card product-card" data-category="anyaman">
+        <img src="images/tasrotan.jpg" alt="Tas Anyaman Rotan">
+        <h3>Tas Rotan Ethnic</h3>
+        <p>Tas wanita dari olahan serat rotan pilihan, tahan lama dan cocok digunakan untuk keperluan kasual.</p>
+        <p class="card-price">Rp 180.000</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Kerajinan Nusantara.</p>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
