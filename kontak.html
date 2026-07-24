@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hubungi Sanggar dan Komunitas Kerajinan Nusantara">
+  <title>Kerajinan Nusantara | Kontak</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Kerajinan Nusantara</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka Menu Navigasi">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Beranda</a></li>
+          <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+          <li><a href="produk.html" class="nav-link">Produk</a></li>
+          <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+          <li><a href="kontak.html" class="nav-link active">Kontak</a></li>
+          <li><button class="theme-toggle-btn" id="themeToggle">🌙 Mode Gelap</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title">Hubungi Kami</h1>
+
+    <div class="contact-wrapper">
+      <section class="card">
+        <h2>Formulir Kontak</h2>
+        <div id="alertSuccess" class="alert-message alert-success" role="alert"></div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" class="form-control" required minlength="3" placeholder="Masukkan nama Anda">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" class="form-control" required placeholder="contoh@email.com">
+          </div>
+
+          <div class="form-group">
+            <label for="pesan">Pesan / Pertanyaan Kerajinan</label>
+            <textarea id="pesan" class="form-control" rows="5" required maxlength="200" placeholder="Tanyakan seputar produk atau pesanan khusus kerajinan..."></textarea>
+            <div class="char-counter" id="charCounter">0/200 karakter</div>
+          </div>
+
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Informasi Sanggar</h2>
+        <p><strong>Alamat Galeri:</strong> Jl. Seni Kriya No. 45, Makassar, Sulawesi Selatan</p>
+        <p><strong>Telepon / WA:</strong> +62 812-9876-5432</p>
+        <p><strong>Email:</strong> info@kerajinannusantara.id</p>
+        <p><strong>Jam Operasional:</strong> Senin - Sabtu (09.00 - 17.00 WITA)</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Kerajinan Nusantara.</p>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
