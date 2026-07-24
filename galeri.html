@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeri Foto Kegiatan Pembuatan Kerajinan Tangan Tradisional">
+  <title>Kerajinan Nusantara | Galeri</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Kerajinan Nusantara</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka Menu Navigasi">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Beranda</a></li>
+          <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+          <li><a href="produk.html" class="nav-link">Produk</a></li>
+          <li><a href="galeri.html" class="nav-link active">Galeri</a></li>
+          <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+          <li><button class="theme-toggle-btn" id="themeToggle">🌙 Mode Gelap</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title">Galeri Kebudayaan & Proses Kriya</h1>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=600" alt="Proses Membatik Tulis">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600" alt="Proses Pengukiran Kayu">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=600" alt="Proses Menganyam Bambu">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1606744888344-493238951221?w=600" alt="Pembuatan Kain Tenun">
+      </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="modal" id="imageModal" role="dialog" aria-modal="true">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modalImage" alt="Gambar Galeri Kerajinan Pembesar">
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Kerajinan Nusantara.</p>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
