@@ -142,7 +142,7 @@ main {
    ========================================================================== */
 .hero {
   background: linear-gradient(rgba(44, 29, 17, 0.75), rgba(44, 29, 17, 0.75)), 
-              url('https://images.unsplash.com/photo-1606744888344-493238951221?w=1200') center/cover no-repeat;
+              url('../images/galeri.jpg') center/cover no-repeat;
   color: #ffffff;
   padding: 5rem 1.5rem;
   text-align: center;
